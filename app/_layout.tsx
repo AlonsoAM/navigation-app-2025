@@ -20,7 +20,15 @@ const RootLayout = () => {
     }
   }, [fontsLoaded, error]);
 
-  if (!fontsLoaded && !error) {
+  if (error) {
+    return (
+      <div style={{ color: "red", textAlign: "center", marginTop: "2rem" }}>
+        Error loading fonts. Please try reloading the app.
+      </div>
+    );
+  }
+
+  if (!fontsLoaded) {
     return null; // or a loading indicator
   }
 
