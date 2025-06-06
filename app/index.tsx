@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const App = () => {
   return (
-    <SafeAreaView>
+    <SafeAreaView className="flex-1">
       <View className="mt-6 mx-2.5">
         <Text className="text-3xl font-work-black text-primary">
           Hola mundo
